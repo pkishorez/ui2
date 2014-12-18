@@ -1,0 +1,21 @@
+/* 
+	Created on : Dec 18, 2014, 9:21:40 PM
+	Author     : kishore
+*/
+
+//	===============================================
+//	Extensions partial extends the default features
+//	of html and add more styles to the elements.
+//	===============================================
+
+// Only capital font where first letter is emphasized.
+.capsFont{
+	display : block;// first-letter pseudo element works only for block elements.
+	text-transform: uppercase;
+	font-size : 20px;
+
+	&::first-letter{
+		font-size : 200% !important;
+	}
+}
+

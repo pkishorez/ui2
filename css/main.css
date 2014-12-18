@@ -104,11 +104,11 @@ h6, .h6 {
 	Created on : Dec 18, 2014, 9:21:40 PM
 	Author     : kishore
 */
-/* line 6, ../sass/partials/_extensions.scss */
+/* line 12, ../sass/partials/_extensions.scss */
 .capsFont {
   display: block;
   text-transform: uppercase;
   font-size: 20px; }
-  /* line 11, ../sass/partials/_extensions.scss */
+  /* line 17, ../sass/partials/_extensions.scss */
   .capsFont::first-letter {
     font-size: 200% !important; }
