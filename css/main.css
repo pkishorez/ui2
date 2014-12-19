@@ -106,46 +106,84 @@ h6, .h6 {
 */
 /* line 12, ../sass/partials/_extensions.scss */
 .capsFont {
-  display: block;
-  text-transform: uppercase;
-  font-size: 20px; }
-  /* line 17, ../sass/partials/_extensions.scss */
+  display: inline-block;
+  text-transform: uppercase; }
+  /* line 16, ../sass/partials/_extensions.scss */
   .capsFont::first-letter {
     font-size: 200% !important; }
 
-/* line 23, ../sass/partials/_extensions.scss */
+/* line 22, ../sass/partials/_extensions.scss */
 .iBlock {
   display: inline-block;
-  vertical-align: top; }
+  vertical-align: middle; }
 
-/* line 29, ../sass/partials/_extensions.scss */
+/* line 28, ../sass/partials/_extensions.scss */
 .marAuto {
   margin: auto; }
 
-/* line 32, ../sass/partials/_extensions.scss */
+/* line 31, ../sass/partials/_extensions.scss */
 .mar10 {
   margin: 10px; }
 
-/* line 35, ../sass/partials/_extensions.scss */
+/* line 34, ../sass/partials/_extensions.scss */
 .mar5 {
   margin: 5px; }
 
-/* line 40, ../sass/partials/_extensions.scss */
+/* line 39, ../sass/partials/_extensions.scss */
 .pad10 {
   padding: 10px; }
 
-/* line 43, ../sass/partials/_extensions.scss */
+/* line 42, ../sass/partials/_extensions.scss */
 .pad5 {
   padding: 5px; }
 
-/* line 48, ../sass/partials/_extensions.scss */
+/* line 47, ../sass/partials/_extensions.scss */
 .alignL {
   text-align: left; }
 
-/* line 51, ../sass/partials/_extensions.scss */
+/* line 50, ../sass/partials/_extensions.scss */
 .alignR {
   text-align: right; }
 
-/* line 54, ../sass/partials/_extensions.scss */
+/* line 53, ../sass/partials/_extensions.scss */
 .alignC {
   text-align: center; }
+
+/* 
+	Created on : Dec 19, 2014, 11:54:28 AM
+	Author     : kishore
+*/
+/* line 12, ../sass/partials/_navbar.scss */
+.navbar {
+  background-color: green; }
+
+/* line 17, ../sass/partials/_navbar.scss */
+.nav {
+  width: 1000px;
+  margin: auto;
+  display: table;
+  background-color: lightgreen; }
+  /* line 24, ../sass/partials/_navbar.scss */
+  .nav .item {
+    display: table-cell;
+    vertical-align: middle; }
+    /* line 29, ../sass/partials/_navbar.scss */
+    .nav .item.cell, .nav .item .cell {
+      position: relative;
+      padding: 10px;
+      cursor: pointer;
+      white-space: nowrap; }
+      /* line 34, ../sass/partials/_navbar.scss */
+      .nav .item.cell:hover, .nav .item .cell:hover {
+        background-color: white; }
+      /* line 38, ../sass/partials/_navbar.scss */
+      .nav .item.cell img, .nav .item .cell img {
+        vertical-align: middle;
+        width: 30px;
+        height: 30px; }
+    /* line 44, ../sass/partials/_navbar.scss */
+    .nav .item.remain {
+      width: 100%; }
+      /* line 46, ../sass/partials/_navbar.scss */
+      .nav .item.remain:hover {
+        background-color: inherit; }

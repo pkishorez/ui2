@@ -5,14 +5,13 @@
 
 //	===============================================
 //	Extensions partial extends the default features
-//	of html and add more styles to the elements.
+//	  of html and add more styles to the elements.
 //	===============================================
 
 // Only capital font where first letter is emphasized.
 .capsFont{
-	display : block;// first-letter pseudo element works only for block elements.
+	display : inline-block;// first-letter pseudo element works only for block elements.
 	text-transform: uppercase;
-	font-size : 20px;
 
 	&::first-letter{
 		font-size : 200% !important;
@@ -22,7 +21,7 @@
 // Inline block style.
 .iBlock{
 	display : inline-block;
-	vertical-align : top;
+	vertical-align : middle;
 }
 
 // Margin classes.
