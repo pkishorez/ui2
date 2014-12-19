@@ -1,0 +1,49 @@
+/* 
+	Created on : Dec 19, 2014, 10:01:45 PM
+	Author     : Kishore
+*/
+
+//	===============================================
+//	Dropdown partial provides the ui component for
+//		dropdown type of functionality.
+//	===============================================
+
+// Dropdown encapsulated.
+.dropdown{
+
+	position : relative;
+	display : inline-block;
+
+	// Dropdown menu.
+	ul{
+		position : absolute;
+		margin-top : -1px;
+		padding : 10px 0px;
+		width : 300px;
+		background-color : white;
+		border : 1px solid slategrey;
+		
+		// Items of dropdown menu.
+		li{
+			padding : 8px 10px;
+			cursor: pointer;
+			&:hover{
+				background-color : darkgreen;
+				color : white;
+			}
+		}
+	}
+	
+	// Dropdown menu that goes up, default down.
+	&.dropup{
+		ul{
+			bottom : 100% !important;
+		}
+	}
+	// Dropdown menu that goes left, default right.
+	&.pullLeft{
+		ul{
+			right : 0px !important;
+		}
+	}
+}

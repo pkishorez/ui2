@@ -10,6 +10,14 @@ and open the template in the editor.
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="stylesheet" href="css/main.css" />
+		<script type="text/javascript" src="js/jquery.js"></script>
+		<script type="text/javascript" src="js/jquery-ui.js"></script>
+		<script type="text/javascript" src="js/dropdown.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function(){
+				$(".tri").dropdown();
+			});
+		</script>
 	</head>
 	<body style="margin : auto;">
 		<div class="alignC pad10">Menu Bar Example.</div>
@@ -20,13 +28,21 @@ and open the template in the editor.
 					Kishore
 				</div>
 				<div class="item">
-					<div class="cell">Kishore<img src="img/test.png"/></div>
+					<div class="cell">
+						Kishore<img src="img/test.png"/>
+						<div style="position: absolute;top: 100%;left: 0px;background-color: red;width: 100px;height: 199px;"></div>
+					</div>
 				</div>
 				<div class="item remain"></div>
 				<div class="item">
 					<div class="cell">Kishore</div>
 				</div>
-				<div class="item cell">Kishore</div>
+				<div class="item cell dropdown">
+					<ul>
+						<li>Data</li>
+					</ul>
+					<div class="tri">Drop</div>
+				</div>
 			</div>
 		</div>
 		<div style="margin : auto;width : 1000px;">
@@ -42,6 +58,15 @@ and open the template in the editor.
 				<h4>Heading 4</h4>
 				<h5>Heading 5</h5>
 				<h6>Heading 6</h6>
+				<div class="dropdown dropup">
+					<div class="button tri" >kishore</div>
+					<ul>
+						<li>Kishore</li>
+						<li>Kishore</li>
+						<li>Kishore</li>
+					</ul>
+				</div>
+				Kishore
 			</div>
 		</div>
 	</body>

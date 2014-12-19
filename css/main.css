@@ -187,3 +187,54 @@ h6, .h6 {
       /* line 46, ../sass/partials/_navbar.scss */
       .nav .item.remain:hover {
         background-color: inherit; }
+
+/* 
+	Created on : Dec 19, 2014, 4:33:11 PM
+	Author     : kishore
+*/
+/* line 10, ../sass/partials/_buttons.scss */
+.button {
+  display: inline-block;
+  padding: 10px;
+  background-color: green;
+  color: white;
+  cursor: pointer;
+  border: 0px; }
+  /* line 17, ../sass/partials/_buttons.scss */
+  .button:hover, .button.active {
+    outline: 0px;
+    border: 0px;
+    opacity: 0.7;
+    background-color: lightgreen;
+    color: black; }
+
+/* 
+	Created on : Dec 19, 2014, 10:01:45 PM
+	Author     : Kishore
+*/
+/* line 12, ../sass/partials/_dropdown.scss */
+.dropdown {
+  position: relative;
+  display: inline-block; }
+  /* line 18, ../sass/partials/_dropdown.scss */
+  .dropdown ul {
+    position: absolute;
+    margin-top: -1px;
+    padding: 10px 0px;
+    width: 300px;
+    background-color: white;
+    border: 1px solid slategrey; }
+    /* line 27, ../sass/partials/_dropdown.scss */
+    .dropdown ul li {
+      padding: 8px 10px;
+      cursor: pointer; }
+      /* line 30, ../sass/partials/_dropdown.scss */
+      .dropdown ul li:hover {
+        background-color: darkgreen;
+        color: white; }
+  /* line 39, ../sass/partials/_dropdown.scss */
+  .dropdown.dropup ul {
+    bottom: 100% !important; }
+  /* line 45, ../sass/partials/_dropdown.scss */
+  .dropdown.pullLeft ul {
+    right: 0px !important; }
