@@ -19,3 +19,38 @@
 	}
 }
 
+// Inline block style.
+.iBlock{
+	display : inline-block;
+	vertical-align : top;
+}
+
+// Margin classes.
+.marAuto{
+	margin : auto;
+}
+.mar10{
+	margin : 10px;
+}
+.mar5{
+	margin : 5px;
+}
+
+// Padding classes
+.pad10{
+	padding : 10px;
+}
+.pad5{
+	padding : 5px;
+}
+
+// Align classes
+.alignL{
+	text-align : left;
+}
+.alignR{
+	text-align : right;
+}
+.alignC{
+	text-align : center;
+}

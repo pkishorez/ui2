@@ -73,7 +73,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   display: block; }
 
 /* line 73, ../sass/partials/_reset.scss */
-b {
+b, h1, h2, h3, h4, h5, h6 {
   font-weight: 900; }
 
 /* line 76, ../sass/partials/_reset.scss */
@@ -112,3 +112,40 @@ h6, .h6 {
   /* line 17, ../sass/partials/_extensions.scss */
   .capsFont::first-letter {
     font-size: 200% !important; }
+
+/* line 23, ../sass/partials/_extensions.scss */
+.iBlock {
+  display: inline-block;
+  vertical-align: top; }
+
+/* line 29, ../sass/partials/_extensions.scss */
+.marAuto {
+  margin: auto; }
+
+/* line 32, ../sass/partials/_extensions.scss */
+.mar10 {
+  margin: 10px; }
+
+/* line 35, ../sass/partials/_extensions.scss */
+.mar5 {
+  margin: 5px; }
+
+/* line 40, ../sass/partials/_extensions.scss */
+.pad10 {
+  padding: 10px; }
+
+/* line 43, ../sass/partials/_extensions.scss */
+.pad5 {
+  padding: 5px; }
+
+/* line 48, ../sass/partials/_extensions.scss */
+.alignL {
+  text-align: left; }
+
+/* line 51, ../sass/partials/_extensions.scss */
+.alignR {
+  text-align: right; }
+
+/* line 54, ../sass/partials/_extensions.scss */
+.alignC {
+  text-align: center; }
