@@ -1,0 +1,20 @@
+/* 
+    Created on : Dec 21, 2014, 12:20:53 AM
+    Author     : Kishore
+*/
+
+// Plugin to stack elements horizontally to fixed width.
+
+.stack-horizontal{
+	display : table;
+	table-layout : fixed;
+	
+	.item{
+		display : table-cell;
+		text-align : center;
+		border-left : 2px solid white;
+		&:first-child{
+			border-left : 0px;
+		}
+	}
+}
