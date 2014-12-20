@@ -1,0 +1,14 @@
+/* 
+	Created on : Dec 20, 2014, 11:40:55 PM
+	Author     : Kishore
+*/
+
+$gridWidth : 1170px;
+$columns   : 24;
+
+@for $column from 1 through $columns
+{
+	.#{span}#{$column}{
+		width : ($gridWidth/$columns) * $column
+	}
+}

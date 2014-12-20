@@ -194,13 +194,12 @@ h6, .h6 {
 */
 /* line 10, ../sass/partials/_buttons.scss */
 .button {
-  display: inline-block;
   padding: 10px;
   background-color: green;
   color: white;
   cursor: pointer;
   border: 0px; }
-  /* line 17, ../sass/partials/_buttons.scss */
+  /* line 16, ../sass/partials/_buttons.scss */
   .button:hover, .button.active {
     outline: 0px;
     border: 0px;
@@ -213,9 +212,8 @@ h6, .h6 {
 */
 /* line 12, ../sass/partials/_dropdown.scss */
 .dropdown {
-  position: relative;
-  display: inline-block; }
-  /* line 18, ../sass/partials/_dropdown.scss */
+  position: relative; }
+  /* line 17, ../sass/partials/_dropdown.scss */
   .dropdown ul {
     position: absolute;
     top: 100%;
@@ -224,23 +222,140 @@ h6, .h6 {
     min-width: 170px;
     background-color: lightgreen;
     z-index: 1; }
-    /* line 28, ../sass/partials/_dropdown.scss */
+    /* line 27, ../sass/partials/_dropdown.scss */
     .dropdown ul li {
       padding: 6px 10px;
       cursor: pointer; }
-      /* line 31, ../sass/partials/_dropdown.scss */
+      /* line 30, ../sass/partials/_dropdown.scss */
       .dropdown ul li:hover {
         background-color: darkgreen;
         color: white; }
-  /* line 40, ../sass/partials/_dropdown.scss */
+  /* line 39, ../sass/partials/_dropdown.scss */
   .dropdown.dropup ul {
     top: auto;
     bottom: 100% !important; }
-  /* line 47, ../sass/partials/_dropdown.scss */
+  /* line 46, ../sass/partials/_dropdown.scss */
   .dropdown.pullLeft ul {
     top: auto;
     right: 0px !important; }
-  /* line 52, ../sass/partials/_dropdown.scss */
+  /* line 51, ../sass/partials/_dropdown.scss */
   .dropdown .button {
     position: relative;
     z-index: 2; }
+
+/* 
+	Created on : Dec 20, 2014, 11:40:55 PM
+	Author     : Kishore
+*/
+/* line 11, ../sass/partials/_grid.scss */
+.span1 {
+  width: 48.75px; }
+
+/* line 11, ../sass/partials/_grid.scss */
+.span2 {
+  width: 97.5px; }
+
+/* line 11, ../sass/partials/_grid.scss */
+.span3 {
+  width: 146.25px; }
+
+/* line 11, ../sass/partials/_grid.scss */
+.span4 {
+  width: 195px; }
+
+/* line 11, ../sass/partials/_grid.scss */
+.span5 {
+  width: 243.75px; }
+
+/* line 11, ../sass/partials/_grid.scss */
+.span6 {
+  width: 292.5px; }
+
+/* line 11, ../sass/partials/_grid.scss */
+.span7 {
+  width: 341.25px; }
+
+/* line 11, ../sass/partials/_grid.scss */
+.span8 {
+  width: 390px; }
+
+/* line 11, ../sass/partials/_grid.scss */
+.span9 {
+  width: 438.75px; }
+
+/* line 11, ../sass/partials/_grid.scss */
+.span10 {
+  width: 487.5px; }
+
+/* line 11, ../sass/partials/_grid.scss */
+.span11 {
+  width: 536.25px; }
+
+/* line 11, ../sass/partials/_grid.scss */
+.span12 {
+  width: 585px; }
+
+/* line 11, ../sass/partials/_grid.scss */
+.span13 {
+  width: 633.75px; }
+
+/* line 11, ../sass/partials/_grid.scss */
+.span14 {
+  width: 682.5px; }
+
+/* line 11, ../sass/partials/_grid.scss */
+.span15 {
+  width: 731.25px; }
+
+/* line 11, ../sass/partials/_grid.scss */
+.span16 {
+  width: 780px; }
+
+/* line 11, ../sass/partials/_grid.scss */
+.span17 {
+  width: 828.75px; }
+
+/* line 11, ../sass/partials/_grid.scss */
+.span18 {
+  width: 877.5px; }
+
+/* line 11, ../sass/partials/_grid.scss */
+.span19 {
+  width: 926.25px; }
+
+/* line 11, ../sass/partials/_grid.scss */
+.span20 {
+  width: 975px; }
+
+/* line 11, ../sass/partials/_grid.scss */
+.span21 {
+  width: 1023.75px; }
+
+/* line 11, ../sass/partials/_grid.scss */
+.span22 {
+  width: 1072.5px; }
+
+/* line 11, ../sass/partials/_grid.scss */
+.span23 {
+  width: 1121.25px; }
+
+/* line 11, ../sass/partials/_grid.scss */
+.span24 {
+  width: 1170px; }
+
+/* 
+    Created on : Dec 21, 2014, 12:20:53 AM
+    Author     : Kishore
+*/
+/* line 8, ../sass/partials/_stack.scss */
+.stack-horizontal {
+  display: table;
+  table-layout: fixed; }
+  /* line 12, ../sass/partials/_stack.scss */
+  .stack-horizontal .item {
+    display: table-cell;
+    text-align: center;
+    border-left: 2px solid white; }
+    /* line 16, ../sass/partials/_stack.scss */
+    .stack-horizontal .item:first-child {
+      border-left: 0px; }
