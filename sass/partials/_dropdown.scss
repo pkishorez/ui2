@@ -17,15 +17,16 @@
 	// Dropdown menu.
 	ul{
 		position : absolute;
-		margin-top : -1px;
+		top : 100%;
+		left : 0px;
 		padding : 10px 0px;
-		width : 300px;
-		background-color : white;
-		border : 1px solid slategrey;
-		
+		min-width : 170px;
+		background-color : lightgreen;
+		z-index : 1;
+
 		// Items of dropdown menu.
 		li{
-			padding : 8px 10px;
+			padding : 6px 10px;
 			cursor: pointer;
 			&:hover{
 				background-color : darkgreen;
@@ -33,17 +34,23 @@
 			}
 		}
 	}
-	
+
 	// Dropdown menu that goes up, default down.
 	&.dropup{
 		ul{
+			top : auto;
 			bottom : 100% !important;
 		}
 	}
 	// Dropdown menu that goes left, default right.
 	&.pullLeft{
 		ul{
+			top : auto;
 			right : 0px !important;
 		}
+	}
+	.button{
+		position : relative;
+		z-index : 2;
 	}
 }

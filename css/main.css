@@ -204,7 +204,6 @@ h6, .h6 {
   .button:hover, .button.active {
     outline: 0px;
     border: 0px;
-    opacity: 0.7;
     background-color: lightgreen;
     color: black; }
 
@@ -219,22 +218,29 @@ h6, .h6 {
   /* line 18, ../sass/partials/_dropdown.scss */
   .dropdown ul {
     position: absolute;
-    margin-top: -1px;
+    top: 100%;
+    left: 0px;
     padding: 10px 0px;
-    width: 300px;
-    background-color: white;
-    border: 1px solid slategrey; }
-    /* line 27, ../sass/partials/_dropdown.scss */
+    min-width: 170px;
+    background-color: lightgreen;
+    z-index: 1; }
+    /* line 28, ../sass/partials/_dropdown.scss */
     .dropdown ul li {
-      padding: 8px 10px;
+      padding: 6px 10px;
       cursor: pointer; }
-      /* line 30, ../sass/partials/_dropdown.scss */
+      /* line 31, ../sass/partials/_dropdown.scss */
       .dropdown ul li:hover {
         background-color: darkgreen;
         color: white; }
-  /* line 39, ../sass/partials/_dropdown.scss */
+  /* line 40, ../sass/partials/_dropdown.scss */
   .dropdown.dropup ul {
+    top: auto;
     bottom: 100% !important; }
-  /* line 45, ../sass/partials/_dropdown.scss */
+  /* line 47, ../sass/partials/_dropdown.scss */
   .dropdown.pullLeft ul {
+    top: auto;
     right: 0px !important; }
+  /* line 52, ../sass/partials/_dropdown.scss */
+  .dropdown .button {
+    position: relative;
+    z-index: 2; }
