@@ -168,23 +168,23 @@ h6, .h6 {
     display: table-cell;
     vertical-align: middle; }
     /* line 29, ../sass/partials/_navbar.scss */
-    .nav .item.cell, .nav .item .cell {
+    .nav .item.cell, .nav .item .cell, .nav .item .ncell, .nav .item.ncell {
       position: relative;
       padding: 10px;
       cursor: pointer;
       white-space: nowrap; }
-      /* line 34, ../sass/partials/_navbar.scss */
-      .nav .item.cell:hover, .nav .item .cell:hover {
-        background-color: white; }
-      /* line 38, ../sass/partials/_navbar.scss */
-      .nav .item.cell img, .nav .item .cell img {
+      /* line 35, ../sass/partials/_navbar.scss */
+      .nav .item.cell img, .nav .item .cell img, .nav .item .ncell img, .nav .item.ncell img {
         vertical-align: middle;
         width: 30px;
         height: 30px; }
-    /* line 44, ../sass/partials/_navbar.scss */
+    /* line 42, ../sass/partials/_navbar.scss */
+    .nav .item.cell:hover, .nav .item .cell:hover {
+      background-color: white; }
+    /* line 46, ../sass/partials/_navbar.scss */
     .nav .item.remain {
       width: 100%; }
-      /* line 46, ../sass/partials/_navbar.scss */
+      /* line 48, ../sass/partials/_navbar.scss */
       .nav .item.remain:hover {
         background-color: inherit; }
 
@@ -195,11 +195,14 @@ h6, .h6 {
 /* line 10, ../sass/partials/_buttons.scss */
 .button {
   padding: 10px;
-  background-color: green;
-  color: white;
+  background-color: white;
+  color: black;
+  -webkit-box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.2);
   cursor: pointer;
   border: 0px; }
-  /* line 16, ../sass/partials/_buttons.scss */
+  /* line 17, ../sass/partials/_buttons.scss */
   .button:hover, .button.active {
     outline: 0px;
     border: 0px;
@@ -212,33 +215,37 @@ h6, .h6 {
 */
 /* line 12, ../sass/partials/_dropdown.scss */
 .dropdown {
-  position: relative; }
-  /* line 17, ../sass/partials/_dropdown.scss */
+  position: relative;
+  display: inline-block; }
+  /* line 18, ../sass/partials/_dropdown.scss */
   .dropdown ul {
     position: absolute;
     top: 100%;
     left: 0px;
-    padding: 10px 0px;
+    padding: 0px;
     min-width: 170px;
     background-color: lightgreen;
     z-index: 1; }
-    /* line 27, ../sass/partials/_dropdown.scss */
+    /* line 28, ../sass/partials/_dropdown.scss */
     .dropdown ul li {
-      padding: 6px 10px;
+      padding: 10px 10px;
       cursor: pointer; }
-      /* line 30, ../sass/partials/_dropdown.scss */
+      /* line 31, ../sass/partials/_dropdown.scss */
+      .dropdown ul li i.fa {
+        margin-right: 5px; }
+      /* line 34, ../sass/partials/_dropdown.scss */
       .dropdown ul li:hover {
         background-color: darkgreen;
         color: white; }
-  /* line 39, ../sass/partials/_dropdown.scss */
+  /* line 43, ../sass/partials/_dropdown.scss */
   .dropdown.dropup ul {
     top: auto;
     bottom: 100% !important; }
-  /* line 46, ../sass/partials/_dropdown.scss */
+  /* line 50, ../sass/partials/_dropdown.scss */
   .dropdown.pullLeft ul {
-    top: auto;
+    left: inherit !important;
     right: 0px !important; }
-  /* line 51, ../sass/partials/_dropdown.scss */
+  /* line 55, ../sass/partials/_dropdown.scss */
   .dropdown .button {
     position: relative;
     z-index: 2; }
@@ -347,15 +354,89 @@ h6, .h6 {
     Created on : Dec 21, 2014, 12:20:53 AM
     Author     : Kishore
 */
-/* line 8, ../sass/partials/_stack.scss */
-.stack-horizontal {
+/* line 9, ../sass/partials/_stack.scss */
+.hstack-fixed {
   display: table;
-  table-layout: fixed; }
-  /* line 12, ../sass/partials/_stack.scss */
-  .stack-horizontal .item {
+  table-layout: fixed;
+  position: relative; }
+  /* line 14, ../sass/partials/_stack.scss */
+  .hstack-fixed .item {
     display: table-cell;
-    text-align: center;
-    border-left: 2px solid white; }
-    /* line 16, ../sass/partials/_stack.scss */
-    .stack-horizontal .item:first-child {
-      border-left: 0px; }
+    text-align: center; }
+
+/* line 21, ../sass/partials/_stack.scss */
+.hstack-variable {
+  position: relative; }
+  /* line 23, ../sass/partials/_stack.scss */
+  .hstack-variable .item {
+    display: inline-block; }
+
+/* 
+	Created on : Dec 21, 2014, 2:02:47 AM
+	Author     : Kishore
+*/
+/*
+	Form partial that defines all the styles of form elements,
+	and provide standard form layout utilities.
+*/
+/* line 10, ../sass/partials/_form.scss */
+.text, .form input[type='text'], .form input[type='password'] {
+  padding: 10px;
+  border: 1px solid #cbcbcb;
+  outline: 0px; }
+  /* line 14, ../sass/partials/_form.scss */
+  .text:focus, .form input[type='text']:focus, .form input[type='password']:focus {
+    border: 1px solid black; }
+  /* line 18, ../sass/partials/_form.scss */
+  .text.error, .form input.error[type='text'], .form input.error[type='password'] {
+    background-color: #ffe9e9;
+    color: red;
+    border: 1px solid #ffcdcd; }
+    /* line 22, ../sass/partials/_form.scss */
+    .text.error:focus, .form input.error[type='text']:focus, .form input.error[type='password']:focus {
+      border: 1px solid #ff0000; }
+  /* line 26, ../sass/partials/_form.scss */
+  .text.success, .form input.success[type='text'], .form input.success[type='password'] {
+    background-color: #e9ffe9;
+    color: darkgreen;
+    border: 1px solid #cdffcd; }
+    /* line 30, ../sass/partials/_form.scss */
+    .text.success:focus, .form input.success[type='text']:focus, .form input.success[type='password']:focus {
+      border: 1px solid green; }
+
+/* line 35, ../sass/partials/_form.scss */
+.select, .form select {
+  outline: 0px;
+  border: 0px;
+  padding: 10px; }
+  /* line 39, ../sass/partials/_form.scss */
+  .select option, .form select option {
+    padding: 10px; }
+  /* line 42, ../sass/partials/_form.scss */
+  .select.error, .form select.error {
+    background-color: #fde4e3;
+    color: red; }
+  /* line 46, ../sass/partials/_form.scss */
+  .select.success, .form select.success {
+    background-color: #e4fde3;
+    color: darkgreen; }
+
+/* line 51, ../sass/partials/_form.scss */
+.checkbox, .form input[type='checkbox'] {
+  vertical-align: middle;
+  border: 1px solid black;
+  background-color: red; }
+
+/* line 56, ../sass/partials/_form.scss */
+.radio, .form input[type='radio'] {
+  vertical-align: middle; }
+
+/* line 74, ../sass/partials/_form.scss */
+.form label {
+  vertical-align: middle;
+  padding: 10px; }
+
+/* line 33, ../sass/main.scss */
+body {
+  background-color: #f5f5f5;
+  -moz-user-select: none; }

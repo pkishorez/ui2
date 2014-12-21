@@ -10,6 +10,7 @@ and open the template in the editor.
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="stylesheet" href="css/main.css" />
+		<link rel="stylesheet" href="css/font-awesome.min.css" />
 		<script type="text/javascript" src="js/jquery.js"></script>
 		<script type="text/javascript" src="js/jquery-ui.js"></script>
 		<script type="text/javascript" src="js/dropdown.js"></script>
@@ -27,6 +28,9 @@ and open the template in the editor.
 				<div class="item cell">
 					Kishore
 				</div>
+				<div class="item ncell">
+					<input type="text" class="text" />
+				</div>
 				<div class="item">
 					<div class="cell">
 						Kishore<img src="img/test.png"/>
@@ -41,37 +45,72 @@ and open the template in the editor.
 				</div>
 			</div>
 		</div>
-		<div style="margin : auto;width : 1000px;">
-			<span class="pad10">
+		<div style="margin : auto;width : 1000px;background-color: white; padding : 10px;">
+			<span>
 				Caps Font example.
 			</span><span class="capsFont h4">This is something you dont want!!!</span>
 			<br />
 			<b class="pad10">Bold Example</b>
-			<div class="pad10">
-				<h1>Heading 1</h1>
-				<h2>Heading 2</h2>
-				<h3>Heading 3</h3>
-				<h4>Heading 4</h4>
-				<h5>Heading 5</h5>
-				<h6>Heading 6</h6>
-				<div class="dropdown">
-					<div class="button tri iBlock" >kishore</div>
-					<ul>
-						<li>Kishore</li>
-						<li>Kishore</li>
-						<li>Kishore</li>
-					</ul>
-				</div>
+			<h1>Heading 1</h1>
+			<h2>Heading 2</h2>
+			<h3>Heading 3</h3>
+			<h4>Heading 4</h4>
+			<h5>Heading 5</h5>
+			<h6>Heading 6</h6>
+			<div class="dropdown pullLeft">
+				<div class="button tri iBlock" ><i class="fa fa-bars pad5"></i></div>
+				<ul>
+					<li><i class="fa fa-home"></i> Kishore</li>
+					<li>Kishore</li>
+					<li>Kishore</li>
+				</ul>
 			</div>
-			<div class="stack-horizontal span20">
-				<div class="item button mar5">
-					Kishore
-				</div>
-				<div class="item button mar5">
-					Kishore
-				</div>
-				<div class="item button mar10">
-					Kishore
+			<h2>Forms</h2>
+			<form class="form">
+				<label>Input Field  <input type="text" class="mar10"/></label><br />
+				<label>Input Success<input type="text" class="success mar10"/></label><br />
+				<label>Password Error<input type="password" class="error mar10"/></label><br />
+				<label>Password Success<input type="password" class="success mar10"/></label><br />
+				<select class="success mar10">
+					<option>Option1</option>
+					<option>Option1</option>
+					<option>Option1</option>
+					<option>Option1</option>
+				</select>
+				<label>
+					<input type="checkbox" />
+					CheckBox.
+				</label>
+				<label>
+					<input type="radio" /> <span class="iBlock">Radio</span>
+				</label>
+			</form>
+			<div>
+				<h2>Layouts</h2>
+				<h5>Horizontal stack</h5>
+				<div style="background-color : tan;" class="span12 pad10">
+					<h5 class="button capsFont">Fixed</h5>
+					<div class="hstack-fixed span12">
+						<div class="item button">Kishore</div>
+						<div class="item button">Kishore</div>
+						<div class="item button">Kishore</div>
+						<div class="item button">Kishore</div>
+						<div class="item button">Kishore</div>
+
+					</div>
+					<h5 class="button capsFont">Variable</h5>
+					<div class="hstack-variable span12" style="background-color : white;">
+						<div class="item button mar5">Kishore</div>
+						<div class="item button mar5">Kishore Kittu</div>
+						<div class="item button mar5">Kishore</div>
+						<div class="item button mar5">Kishore</div>
+						<div class="item button mar5">Kishore</div>
+						<div class="item button mar5">Kishore</div>
+						<div class="item button mar5">Kishore</div>
+						<div class="item button mar5">Kishore</div>
+						<div class="item button mar5">Kishore</div>
+						<div class="item button mar5">Kishore</div>
+					</div>
 				</div>
 			</div>
 		</div>
