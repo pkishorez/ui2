@@ -26,19 +26,21 @@
 		vertical-align : middle;
 		
 		// Content of each item.
-		&.cell,.cell{
+		&.cell,.cell,.ncell,&.ncell{
 			position : relative;
 			padding : 10px;
 			cursor : pointer;
 			white-space : nowrap;	// Do not wrap text.
-			&:hover{
-				background-color : white;
-			}
 
 			img{
 				vertical-align : middle;
 				width : 30px;
 				height : 30px;
+			}
+		}
+		&.cell,.cell{
+			&:hover{
+				background-color : white;
 			}
 		}
 		&.remain{
