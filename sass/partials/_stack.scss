@@ -3,18 +3,24 @@
     Author     : Kishore
 */
 
-// Plugin to stack elements horizontally to fixed width.
+// Plugin to stack elements horizontally.
 
-.stack-horizontal{
+// Horizontal fixed width stack
+.hstack-fixed{
 	display : table;
 	table-layout : fixed;
+	position : relative;
 	
 	.item{
 		display : table-cell;
 		text-align : center;
-		border-left : 2px solid white;
-		&:first-child{
-			border-left : 0px;
-		}
+	}
+}
+
+// Horizontal variable width stack.
+.hstack-variable{
+	position : relative;
+	.item{
+		display : inline-block;
 	}
 }
