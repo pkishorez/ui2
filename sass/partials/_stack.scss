@@ -8,9 +8,10 @@
 // Horizontal fixed width stack
 .hstack-fixed, .hstack{
 	display : table;
+	width : 100%;
 	position : relative;
 	
-	.item{
+	> .item{
 		display : table-cell;
 		text-align : center;
 	}
@@ -22,21 +23,20 @@
 // Horizontal variable width stack.
 .hstack-variable{
 	position : relative;
-	.item{
+	> .item{
 		display : inline-block;
+		vertical-align : top;
 	}
 }
 
 // Float stack to left
 .hstack-float{
-	.item{
+	> .item{
 		float : left;
-		&.last{
-			&::after{
-				display : block;
-				content : "";
-				clear : both;
-			}
-		}
+	}
+	&::after{
+		display : block;
+		content : "";
+		clear : both;
 	}
 }
