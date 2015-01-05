@@ -8,27 +8,29 @@
 	and provide standard form layout utilities.
 */
 .text{
-	padding : 10px;
+	padding : 8px;
 	border : 1px solid #cbcbcb;
 	outline : 0px;
+	@include box-sizing(border-box);
+
 	&:focus{
 		border : 1px solid black;
 	}
 
 	&.error{
-		background-color : #ffe9e9;
+		background-color : #fdf4f3;
 		color : red;
-		border : 1px solid #ffcdcd;
+		border : 1px solid #feb0b0;
 		&:focus{
-			border : 1px solid #ff0000;
+			border : 1px solid #ca001c;
 		}
 	}
 	&.success{
-		background-color : #e9ffe9;
-		color : darkgreen;
-		border : 1px solid #cdffcd;
+		background-color: #F2FEF3;
+		color : #015B0B;
+		border : 1px solid #90FFA0;
 		&:focus{
-			border : 1px solid green;
+			border : 1px solid #01b418;
 		}
 	}
 }
@@ -36,6 +38,8 @@
 	outline : 0px;
 	border : 0px;
 	padding : 10px;
+	@include box-sizing(border-box);
+
 	option{
 		padding : 10px;
 	}
@@ -73,6 +77,42 @@
 	}
 	label{
 		vertical-align : middle;
-		padding : 10px;
+	}
+}
+
+.form-horizontal{
+	.field{
+		display : table;
+		width : 100%;
+		padding-bottom : 10px;
+
+		&:first-child{
+			padding-top : 10px;
+		}
+		.name,.value,.status{
+			display : table-cell;
+			vertical-align : middle;
+		}
+		.name{
+			text-align : right;
+			padding-right : 10px;
+		}
+		.value{
+			width : 0px;
+		}
+		.status{
+			text-align : left;
+			padding-left : 10px;
+		}
+		&.error{
+			.status{
+				color : red;
+			}
+		}
+		&.success{
+			.status{
+				color : #015B0B;
+			}
+		}
 	}
 }

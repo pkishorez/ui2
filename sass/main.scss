@@ -34,3 +34,8 @@ body{
 	background-color : #f5f5f5;
 	-moz-user-select: none;
 }
+
+.fa-dummy{
+	@include opacity(0);
+	&:before{content:"\f015"}
+}

@@ -14,9 +14,11 @@ and open the template in the editor.
 		<script type="text/javascript" src="js/jquery.js"></script>
 		<script type="text/javascript" src="js/jquery-ui.js"></script>
 		<script type="text/javascript" src="js/dropdown.js"></script>
+		<script type="text/javascript" src="js/form_validation.js"></script>
 		<script type="text/javascript">
 			$(document).ready(function(){
 				$(".tri").dropdown();
+				$(".form").registerValidation();
 			});
 		</script>
 	</head>
@@ -24,7 +26,7 @@ and open the template in the editor.
 		<div class="alignC pad10">Menu Bar Example.</div>
 		<div class="navbar">
 			<div class="nav span24">
-				<div class="item cell h1">Kishore</div>
+				<a href="#"><div class="item cell h1">Kishore</div></a>
 				<div class="item cell">
 					Kishore
 				</div>
@@ -38,7 +40,17 @@ and open the template in the editor.
 				</div>
 				<div class="item remain"></div>
 				<div class="item">
-					<div class="cell">Kishore</div>
+					<div class="ncell">
+						<div class="dropdown pullLeft">
+							<div class="button tri iBlock" ><i class="fa fa-bars pad5"></i></div>
+							<ul>
+								<li><i class="fa fa-home"></i> Kishore</li>
+								<li><i class="fa fa-youtube"></i> Kishore</li>
+								<li><i class="fa fa-yahoo"></i> Kishore</li>
+								<li>Kishore</li>
+							</ul>
+						</div>
+					</div>
 				</div>
 				<div class="item cell">
 					Log Out
@@ -112,6 +124,51 @@ and open the template in the editor.
 						<div class="item button mar5">Kishore</div>
 					</div>
 				</div>
+				<br /><br />
+				<h2>Form Layouts</h2>
+				<form class="form" method="POST" action="https://www.google.com">
+				<div class="span13 form-horizontal" style="background-color: white">
+					<label class="field" data-v_c="required,minlen 5">
+						<span class="name span4">Name</span>
+						<span class="value">
+							<input type="text" class="span4"/>
+						</span>
+						<span class="status">
+							This is a success!!!
+						</span>
+					</label>
+					<label class="field error" data-v_c="required,minlen 5">
+						<span class="name span4">Father's Name</span>
+						<span class="value span4">
+							<input type="text" class='error span4' />
+						</span>
+						<span class="status">
+							This is a success!!!
+						</span>
+					</label>
+					<label class="field" data-v_c = "required,minlen 5,maxlen 10">
+						<span class="name span4">Mother's name</span>
+						<span class="value">
+							<input type="text" class="span4" />
+						</span>
+						<span class="status error">
+						</span>
+					</label>
+					<label class="field" data-v_c = "required,num,minnum 20">
+						<span class="name span4">Age</span>
+						<span class="value span2">
+							<input type="text" class="span2" />
+						</span>
+						<span class="status error">
+							<i class="fa fa-times"></i> This is a success!!!
+						</span>
+					</label>
+					<span class="field">
+						<span class="name span4"></span>
+						<input type="submit" class="span4 button" />
+					</span>
+				</div>
+				</form>
 			</div>
 		</div>
 	</body>
