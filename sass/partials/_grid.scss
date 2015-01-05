@@ -9,6 +9,6 @@ $columns   : 24;
 @for $column from 1 through $columns
 {
 	.#{span}#{$column}{
-		width : ($gridWidth/$columns) * $column
+		width : ($gridWidth/$columns) * $column !important;
 	}
 }
