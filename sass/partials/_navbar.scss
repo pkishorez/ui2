@@ -24,12 +24,11 @@
 	.item{
 		display : table-cell;
 		vertical-align : middle;
-		
+
 		// Content of each item.
 		&.cell,.cell,.ncell,&.ncell{
 			position : relative;
 			padding : 10px;
-			cursor : pointer;
 			white-space : nowrap;	// Do not wrap text.
 
 			img{
@@ -39,6 +38,7 @@
 			}
 		}
 		&.cell,.cell{
+			cursor : pointer;
 			&:hover{
 				background-color : white;
 			}
