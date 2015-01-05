@@ -6,9 +6,8 @@
 // Plugin to stack elements horizontally.
 
 // Horizontal fixed width stack
-.hstack-fixed{
+.hstack-fixed, .hstack{
 	display : table;
-	table-layout : fixed;
 	position : relative;
 	
 	.item{
@@ -16,11 +15,28 @@
 		text-align : center;
 	}
 }
+.hstack-fixed{
+	table-layout : fixed;
+}
 
 // Horizontal variable width stack.
 .hstack-variable{
 	position : relative;
 	.item{
 		display : inline-block;
+	}
+}
+
+// Float stack to left
+.hstack-float{
+	.item{
+		float : left;
+		&.last{
+			&::after{
+				display : block;
+				content : "";
+				clear : both;
+			}
+		}
 	}
 }
