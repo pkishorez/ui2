@@ -23,10 +23,9 @@ and open the template in the editor.
 		</script>
 	</head>
 	<body style="margin : auto;">
-		<div class="alignC pad10">Menu Bar Example.</div>
 		<div class="navbar">
 			<div class="nav span24">
-				<a href="#"><div class="item cell h1">Kishore</div></a>
+				<a href="#" class="item cell h1">Kishore</a>
 				<div class="item cell">
 					Kishore
 				</div>
@@ -36,6 +35,11 @@ and open the template in the editor.
 				<div class="item">
 					<div class="cell">
 						Kishore<img src="img/test.png"/>
+					</div>
+				</div>
+				<div class="item">
+					<div class="cell">
+						Kishore
 					</div>
 				</div>
 				<div class="item remain"></div>
@@ -58,6 +62,40 @@ and open the template in the editor.
 			</div>
 		</div>
 		<div style="margin : auto;width : 1000px;background-color: white; padding : 10px;">
+			<div class="pad10 hstack-variable">
+				<div class="pad10 mar5 bg-amber item"></div>
+				<div class="pad10 mar5 bg-black item"></div>
+				<div class="pad10 mar5 bg-blue item"></div>
+				<div class="pad10 mar5 bg-brown item"></div>
+				<div class="pad10 mar5 bg-cobalt item"></div>
+				<div class="pad10 mar5 bg-crimson item"></div>
+				<div class="pad10 mar5 bg-cyan item"></div>
+				<div class="pad10 mar5 bg-dark item"></div>
+				<div class="pad10 mar5 bg-darkBlue item"></div>
+				<div class="pad10 mar5 bg-darkBrown item"></div>
+				<div class="pad10 mar5 bg-darkCobalt item"></div>
+				<div class="pad10 mar5 bg-amber item"></div>
+				<div class="pad10 mar5 bg-amber item"></div>
+				<div class="pad10 mar5 bg-amber item"></div>
+				<div class="pad10 mar5 bg-amber item"></div>
+				<div class="pad10 mar5 bg-amber item"></div>
+				<div class="pad10 mar5 bg-amber item"></div>
+				<div class="pad10 mar5 bg-amber item"></div>
+				<div class="pad10 mar5 bg-amber item"></div>
+				<div class="pad10 mar5 bg-amber item"></div>
+				<div class="pad10 mar5 bg-amber item"></div>
+				<div class="pad10 mar5 bg-amber item"></div>
+				<div class="pad10 mar5 bg-amber item"></div>
+				<div class="pad10 mar5 bg-amber item"></div>
+				<div class="pad10 mar5 bg-amber item"></div>
+				<div class="pad10 mar5 bg-amber item"></div>
+				<div class="pad10 mar5 bg-amber item"></div>
+				<div class="pad10 mar5 bg-amber item"></div>
+				<div class="pad10 mar5 bg-amber item"></div>
+				<div class="pad10 mar5 bg-amber item"></div>
+				<div class="pad10 mar5 bg-amber item"></div>
+				<div class="pad10 mar5 bg-amber item"></div>
+			</div>
 			<span>
 				Caps Font example.
 			</span><span class="capsFont h4">This is something you dont want!!!</span>
@@ -73,7 +111,8 @@ and open the template in the editor.
 				<div class="button tri iBlock" ><i class="fa fa-bars pad5"></i></div>
 				<ul>
 					<li><i class="fa fa-home"></i> Kishore</li>
-					<li>Kishore</li>
+					<li class="divider"></li>
+					<li class="disabled">Kishore</li>
 					<li>Kishore</li>
 				</ul>
 			</div>
@@ -112,6 +151,7 @@ and open the template in the editor.
 
 					</div>
 					<h5 class="capsFont pad10">Variable</h5>
+					<h6 class="pad10 fg-red">(Problem with white space, white space between elements is preserved)</h6>
 					<div class="hstack-variable span12">
 						<div class="item button ">Kishore</div>
 						<div class="item button span4 alignC">Kishore Kittu</div>
@@ -163,10 +203,10 @@ and open the template in the editor.
 					<div class="pad10 bg-taupe fg-white">
 						<h3 class="capsFont">RGUKT</h3>
 					</div>
-					<div class="hstack-variable bg-darkGreen">
-						<div class="item pad5">Menu Bar&gt;&gt;</div>
-						<div class="item pad5">Menu Bar</div>
-						<div class="item pad5">Menu Bar</div>
+					<div class="nav span13 bg-darkGreen">
+						<div class="item pad5 cell">Menu Bar&gt;&gt;</div>
+						<div class="item pad5 cell">Menu Bar</div>
+						<div class="item pad5"><div class="cell">Menu Bar</div></div>
 						<div class="item pad5">Menu Bar</div>
 					</div>
 					<div class="hstack-float">
@@ -234,6 +274,21 @@ and open the template in the editor.
 					</span>
 				</div>
 				</form>
+				<h2 class="pad10">Side Bar</h2>
+				<ul class="sidebar span5">
+					<li>Kishore</li>
+					<li class="disabled">Kishore</li>
+					<li><i class="fa fa-home"></i>Kishore</li>
+					<li class="submenu">
+						<div class="tri trigger" >Kittu<i class="fa fa-caret-down floatR"></i></div>
+						<ul class="sidebar spanp">
+							<li><i class="fa fa-home"></i> Kishore</li>
+							<li><i class="fa fa-youtube"></i> Kishore</li>
+							<li><i class="fa fa-yahoo"></i> Kishore</li>
+							<li>Kishore</li>
+						</ul>
+					</li>
+				</ul>
 			</div>
 		</div>
 	</body>

@@ -6,6 +6,9 @@
 // Import CSS3 support for cross browser CSS3 properties
 @import "compass/css3";
 
+// Variables Partial
+@import "partials/variables";
+
 // Reset CSS
 @import "partials/reset";
 
@@ -30,9 +33,11 @@
 // Forms Partial
 @import "partials/form";
 
+// Sidebar partial
+@import "partials/sidebar";
+
 body{
-	background-color : #f5f5f5;
-	-moz-user-select: none;
+	background-color : $llcolor;
 }
 
 .fa-dummy{

@@ -35,12 +35,12 @@
 				$this.click(function(){
 					var status = $this.data("status");
 					if (status === dropdown.inactive){
-						$menu.fadeIn("slow");
+						$menu.slideDown("fast");
 						$this.data("status", dropdown.active);
 						$this.addClass("active");
 					}
 					else{
-						$menu.fadeOut("slow");
+						$menu.slideUp("fast");
 						$this.data("status", dropdown.inactive);
 						$this.removeClass("active");
 					}
