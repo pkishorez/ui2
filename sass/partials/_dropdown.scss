@@ -31,6 +31,18 @@
 			i.fa{
 				margin-right : 5px;
 			}
+			&.disabled, &.divider{
+				&:hover,&{
+					background-color : inherit;
+					color : #828282;
+					cursor : default;
+				}
+			}
+			&.divider{
+				padding : 0px;
+				border-bottom : 1px solid #8e8e8e;
+				margin : 5px 0px;
+			}
 			&:hover{
 				background-color : darkgreen;
 				color : white;
