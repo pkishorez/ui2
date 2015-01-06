@@ -20,7 +20,7 @@
 	background-color : lightgreen;
 
 	// Items in menu bar.
-	.item{
+	> .item{
 		display : table-cell;
 		vertical-align : middle;
 
@@ -34,6 +34,7 @@
 				vertical-align : middle;
 				width : 30px;
 				height : 30px;
+				margin-left : 10px;
 			}
 		}
 		&.cell,.cell{
