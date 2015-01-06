@@ -1,0 +1,55 @@
+/* 
+	Created on : Jan 6, 2015, 10:15:32 AM
+	Author     : Kishore
+*/
+
+//	========================================
+//	    Navigational Side Bar component.
+//	========================================
+
+@mixin sidebar_active{
+	background-color : $color;
+	color : white;
+	cursor : pointer;
+}
+ul.sidebar{
+
+	background-color : $lllcolor;
+	li{
+		padding : 10px;
+		&.disabled{
+			&,&:hover{
+				color : lightslategray;
+				cursor : default;
+				background-color : inherit;
+			}
+		}
+		&.active, &:hover{
+			@include sidebar_active;
+		}
+		.fa{
+			padding-right : 10px;
+		}
+		
+		&.submenu{
+			display : block;
+			padding : 0px;
+
+			.trigger{
+				padding : 10px;
+				&.active{
+					background-color : $color;
+					color : white;
+					cursor : pointer;
+				}
+			}
+			ul{
+				background-color : window;
+				color : black;
+			}
+			ul.active{
+				display : block;
+			}
+		}
+	}
+}
