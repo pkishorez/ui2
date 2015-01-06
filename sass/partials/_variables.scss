@@ -1,0 +1,70 @@
+/* 
+	Created on : Jan 6, 2015, 11:01:15 AM
+	Author     : Kishore
+*/
+
+$_black: #000000;
+$_white: #ffffff;
+$_lime: #a4c400;
+$_green: #60a917;
+$_emerald: #008a00;
+$_teal: #00aba9;
+$_cyan: #1ba1e2;
+$_cobalt: #0050ef;
+$_indigo: #6a00ff;
+$_violet: #aa00ff;
+$_pink: #dc4fad;
+$_magenta: #d80073;
+$_crimson: #a20025;
+$_red: #e51400;
+$_orange: #fa6800;
+$_amber: #f0a30a;
+$_yellow: #e3c800;
+$_brown: #825a2c;
+$_olive: #6d8764;
+$_steel: #647687;
+$_mauve: #76608a;
+$_taupe: #87794e;
+$_gray: #555555;
+$_dark: #333333;
+$_darker: #222222;
+$_transparent: transparent;
+$_darkBrown: #63362f;
+$_darkCrimson: #640024;
+$_darkMagenta: #81003c;
+$_darkIndigo: #4b0096;
+$_darkCyan: #1b6eae;
+$_darkCobalt: #00356a;
+$_darkTeal: #004050;
+$_darkEmerald: #003e00;
+$_darkGreen: #128023;
+$_darkOrange: #bf5a15;
+$_darkRed: #9a1616;
+$_darkPink: #9a165a;
+$_darkViolet: #57169a;
+$_darkBlue: #16499a;
+$_lightBlue: #4390df;
+$_lightTeal: #45fffd;
+$_lightOlive: #78aa1c;
+$_lightOrange: #c29008;
+$_lightPink: #f472d0;
+$_lightRed: #ff2d19;
+$_lightGreen: #7ad61d;
+$_grayDark: #333333;
+$_grayDarker: #222222;
+$_grayLight: #999999;
+$_grayLighter: #eeeeee;
+$_blue: #00aff0;
+
+
+// Theme related colors
+
+$color : #3b5998;
+$lcolor : #8b9dc3;
+$llcolor : #dfe3ee;
+$lllcolor : #f7f7f7;
+$dcolor : darken($color , 5);
+
+.kishore{
+	color : $dcolor;
+}
