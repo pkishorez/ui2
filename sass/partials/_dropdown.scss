@@ -21,13 +21,15 @@
 		left : 0px;
 		padding : 0px;
 		min-width : 170px;
-		background-color : lightgreen;
+		background-color : white;
 		z-index : 1;
 
 		// Items of dropdown menu.
 		li{
 			padding : 10px 10px;
 			cursor: pointer;
+			color : black;
+
 			i.fa{
 				margin-right : 5px;
 			}
@@ -44,7 +46,7 @@
 				margin : 5px 0px;
 			}
 			&:hover{
-				background-color : darkgreen;
+				background-color : $color;
 				color : white;
 			}
 		}

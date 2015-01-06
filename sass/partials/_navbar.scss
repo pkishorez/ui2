@@ -10,14 +10,13 @@
 
 // Menu Bar if needed.
 .navbar{
-	background-color : green;
+	background-color : $color;
 }
 
 // Menu content styles.
 .nav{
 	margin : auto;
 	display : table;
-	background-color : lightgreen;
 
 	// Items in menu bar.
 	> .item{
@@ -28,6 +27,7 @@
 		&.cell,.cell,.ncell,&.ncell{
 			position : relative;
 			padding : 10px;
+			color : white;
 			white-space : nowrap;	// Do not wrap text.
 
 			img{
@@ -40,7 +40,7 @@
 		&.cell,.cell{
 			cursor : pointer;
 			&:hover{
-				background-color : white;
+				background-color : $dcolor;
 			}
 		}
 		&.remain{
