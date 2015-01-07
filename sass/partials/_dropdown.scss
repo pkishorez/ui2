@@ -22,7 +22,7 @@
 		padding : 0px;
 		min-width : 170px;
 		background-color : white;
-		z-index : 1;
+		//border : 1px solid #d7d7d7;
 
 		// Items of dropdown menu.
 		li{
@@ -68,6 +68,5 @@
 	}
 	.button{
 		position : relative;
-		z-index : 2;
 	}
 }
