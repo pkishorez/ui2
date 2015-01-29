@@ -23,6 +23,7 @@
 		min-width : 170px;
 		background-color : white;
 		//border : 1px solid #d7d7d7;
+		@include box-shadow(black 0px 0px 10px);
 
 		// Items of dropdown menu.
 		li{
@@ -46,7 +47,7 @@
 				margin : 5px 0px;
 			}
 			&:hover{
-				background-color : $color;
+				background-color : $theme-color;
 				color : white;
 			}
 		}
