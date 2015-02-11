@@ -59,12 +59,42 @@ $_blue: #00aff0;
 
 // Theme related colors
 
-$color : #3b5998;
-$lcolor : #8b9dc3;
-$llcolor : #dfe3ee;
-$lllcolor : #f7f7f7;
-$dcolor : darken($color , 5);
+$theme-color : #3b5998;
+$theme-lcolor : #8b9dc3;
+$theme-llcolor : #dfe3ee;
+$theme-lllcolor : #f7f7f7;
+$theme-dcolor : darken($theme-color , 5);
 
-.kishore{
-	color : $dcolor;
+$color : #404040;
+$lcolor : #F5F5F5;
+$dcolor : black;
+
+
+.bgcolor{
+	background-color : $theme-color !important;
+}
+.bglcolor{
+	background-color : $theme-lcolor;
+}
+.bgllcolor{
+	background-color : $theme-llcolor;
+}
+.bglllcolor{
+	background-color : $theme-lllcolor !important;
+}
+.bgdcolor{
+	background-color : $theme-dcolor !important;
+}
+.bgwhite{
+	background-color : white !important;
+}
+
+.fgcolor{
+	color : $theme-color;
+}
+.fglcolor{
+	color : $theme-lcolor;
+}
+.fgdcolor{
+	color : $theme-dcolor;
 }
