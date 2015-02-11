@@ -13,11 +13,16 @@
 	
 	> .item{
 		display : table-cell;
-		text-align : center;
+		&.remain{
+			width : 100%;
+		}
 	}
 }
 .hstack-fixed{
 	table-layout : fixed;
+	> .item{
+		vertical-align : middle;
+	}
 }
 
 // Horizontal variable width stack.
