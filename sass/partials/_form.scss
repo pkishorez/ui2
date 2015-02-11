@@ -34,24 +34,6 @@
 		}
 	}
 }
-.select{
-	outline : 0px;
-	border : 0px;
-	padding : 10px;
-	@include box-sizing(border-box);
-
-	option{
-		padding : 10px;
-	}
-	&.error{
-		background-color : #fde4e3;
-		color : red;
-	}
-	&.success{
-		background-color : #e4fde3;
-		color : darkgreen;
-	}
-}
 .checkbox{
 	vertical-align : middle;
 	border : 1px solid black;
@@ -65,9 +47,6 @@
 .form{
 	input[type='text'],input[type='password']{
 		@extend .text;
-	}
-	select{
-		@extend .select;
 	}
 	input[type='checkbox']{
 		@extend .checkbox;
