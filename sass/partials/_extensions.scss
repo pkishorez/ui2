@@ -17,12 +17,22 @@
 	}
 }
 
+.boxBorder{
+	@include box-sizing(border-box);
+}
 // Inline block style.
 .iBlock{
 	display : inline-block;
 	vertical-align : middle;
 }
 
+.bold{
+	font-weight : 900;
+}
+
+.displayN{
+	display : none;
+}
 // Margin classes.
 .marAuto{
 	margin : auto;
@@ -123,13 +133,13 @@
 }
 // Align classes
 .alignL{
-	text-align : left;
+	text-align : left !important;
 }
 .alignR{
-	text-align : right;
+	text-align : right !important;
 }
 .alignC{
-	text-align : center;
+	text-align : center !important;
 }
 
 // Float classes
