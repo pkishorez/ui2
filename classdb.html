@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+	<head>
+		<title>Class-UI redefined...</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="css/classdb.css" />
+		<link rel="stylesheet" href="css/font-awesome.min.css" />
+		<script type="text/javascript" src="js/jquery.js"></script>
+		<script type="text/javascript" src="js/jquery-ui.js"></script>
+		<script type="text/javascript" src="js/dropdown.js"></script>
+		<script type="text/javascript" src="js/flash.js"></script>
+		<script type="text/javascript" src="js/form_validation.js"></script>
+	</head>
+	<body class="bglllcolor">
+		<div class="navbar" style="position: absolute;top : 0px;left : 0px;width : 100%;">
+			<div class="nav span22">
+				<span class="item ncell bold" style="font-size : 25px">Class-DB</span>
+				<span class="item remain"></span>
+				<a href="#" class="item cell"><i class="fa fa-home"></i> Home</a>
+				<a href="#" class="item cell"><i class="fa fa-database"></i> Databases</a>
+				<a href="#" class="item cell"><i class="fa fa-th-large"></i> Sharding</a>
+				<a href="#" class="item cell"><i class="fa fa-bar-chart"></i> Analytics</a>
+			</div>
+		</div>
+		<div class="marAuto boxBorder span22 bgwhite" style="padding-top: 55px; height: 100%;">
+			<div class="hstack-variable">
+				<a href="#" id="actionAddCollection" class="item button"><i class="fa fa-file"></i> Add Collection</a>
+			</div>
+			<div class=" workplace" >
+				<hr>
+			</div>
+		</div>
+		<div id="template_addCollection" class="displayN">
+			<form class="form" onsubmit="utilities.addCollection(this)">
+				<div class="span10 form-horizontal">
+					<label class="field" data-v_c="required,minlen 3">
+						<span class="name span3">Name</span>
+						<span class="value span4">
+							<input type="text" class="span4"/>
+						</span>
+						<span class="status">
+						</span>
+					</label>
+					<label class="field error" data-v_c="required,minlen 5">
+						<span class="name span3">Type</span>
+						<span class="value span4">
+							<select class='error span4'>
+								<option>Fixed</option>
+								<option>Variable</option>
+							</select>
+						</span>
+						<span class="status">
+						</span>
+					</label>
+					<label class="field" data-v_c = "required,num">
+						<span class="name span3">Unit Size</span>
+						<span class="value span4">
+							<input type="text" class="span4"  />
+						</span>
+						<span class="status error">
+						</span>
+					</label>
+					<span class="field">
+						<span class="name span3"></span>
+						<span class="span4 value alignL">
+							<input type="submit" value="Add" class="span4 button" />
+						</span>
+						<span class="status"></span>
+					</span>
+				</div>
+			</form>
+		</div>
+		<div class="flash ">
+			<div class="flash-content">
+				<div class="marAuto noFocus">
+					<div class="nav bgcolor">
+						<div class="item ncell title">Window</div>
+						<div class="item remain"></div>
+						<!--<div class="item cell"><i class="fa fa-times"></i></div>-->
+					</div>
+					<div class="bgwhite content">
+					</div>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript">
+			var templates = {
+				addCollection : $("#template_addCollection"),
+				_init_ : function(){
+					$(".form", templates.addCollection).registerValidation();
+				}
+			};
+			var actions = {
+				addCollection : function(){
+					$(".flash").flash({
+						title : "<i class='fa fa-plus'></i> Add Collection"
+					});
+					templates.addCollection.removeClass("displayN");
+					$(".flash .content").html("").append(templates.addCollection);
+				}
+			};
+			templates._init_();
+
+			$(document).ready(function(){
+				$(".tri").dropdown();
+				$(".form").registerValidation();
+				$("#actionAddCollection").click(function(){
+					actions.addCollection();
+				});
+			});
+		</script>
+	</body>
+</html>
