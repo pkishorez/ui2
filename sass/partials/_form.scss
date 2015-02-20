@@ -7,6 +7,10 @@
 	Form partial that defines all the styles of form elements,
 	and provide standard form layout utilities.
 */
+
+select{
+	padding : 3px;
+}
 .text{
 	padding : 8px;
 	border : 1px solid #cbcbcb;
@@ -77,6 +81,7 @@
 			padding-right : 10px;
 		}
 		.value{
+			text-alight : left;
 			width : 0px;
 		}
 		.status{
@@ -84,11 +89,17 @@
 			padding-left : 10px;
 		}
 		&.error{
+			input[type="text"],input[type="password"],input[type="checkbox"],input[type="radio"]{
+				@extend .text.error;
+			}
 			.status{
 				color : red;
 			}
 		}
 		&.success{
+			input[type="text"],input[type="password"],input[type="checkbox"],input[type="radio"]{
+				@extend .text.success;
+			}
 			.status{
 				color : #015B0B;
 			}
