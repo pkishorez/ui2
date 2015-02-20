@@ -24,6 +24,13 @@
 		display : table-cell;
 		vertical-align : middle;
 
+		.button{
+			background-color : $theme-color;
+			color : white;
+			&.active{
+				background-color : $theme-dcolor;
+			}
+		}
 		// Content of each item.
 		&.cell,.cell,.ncell,&.ncell{
 			position : relative;
